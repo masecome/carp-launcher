@@ -1,0 +1,47 @@
+{
+  "name": "carp-launcher",
+  "version": "1.0.0",
+  "description": "CARP Resmi Launcher",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/masecome/carp-launcher.git"
+  },
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+    
+  },
+  "author": "CARP DEV",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "discord-rpc": "^4.0.1"
+},
+  "build": {
+    "appId": "com.carproleplay.launcher",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "masecome",
+        "repo": "carp-launcher"
+      }
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "logo.ico" 
+    },
+
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "CARP Launcher"
+    }
+  }
+}
