@@ -1,29 +1,29 @@
 {
   "name": "carp-launcher",
   "version": "1.0.0",
-  "description": "CARP Resmi Launcher",
+  "description": "CARP Roleplay Launcher",
   "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "author": "CARP Roleplay",
   "repository": {
     "type": "git",
     "url": "https://github.com/masecome/carp-launcher.git"
   },
-  "scripts": {
-    "start": "electron .",
-    "dist": "electron-builder"
-    
+  "dependencies": {
+    "axios": "^1.6.0",
+    "discord-rpc": "^4.0.0",
+    "electron-updater": "^6.1.0" 
   },
-  "author": "CARP DEV",
-  "license": "ISC",
   "devDependencies": {
     "electron": "^30.0.0",
-    "electron-builder": "^24.13.3"
+    "electron-builder": "^24.13.0"
   },
-  "dependencies": {
-    "axios": "^1.6.8",
-    "discord-rpc": "^4.0.1"
-},
   "build": {
     "appId": "com.carproleplay.launcher",
+    "productName": "CARP Launcher",
     "publish": [
       {
         "provider": "github",
@@ -33,15 +33,12 @@
     ],
     "win": {
       "target": "nsis",
-      "icon": "logo.ico" 
+      "icon": "icon.ico"
     },
-
     "nsis": {
       "oneClick": false,
-      "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
-      "createStartMenuShortcut": true,
-      "shortcutName": "CARP Launcher"
+      "allowToChangeInstallationDirectory": true
     }
   }
 }
