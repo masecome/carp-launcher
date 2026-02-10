@@ -53,6 +53,7 @@ npm install
 # 4. Uygulamayı test modunda başlatın
 npm start
 ```
+
 👨‍💻 Geliştirici & Yazar
 Bu proje EREN (MASECOME) tarafından CARP Roleplay topluluğu için sevgiyle kodlanmıştır.
 
@@ -63,4 +64,4 @@ Bir hata mı buldunuz veya öneriniz mi var? Bize Discord üzerinden ulaşabilir
 
 🔗 Discord Sunucumuz: https://discord.gg/caroleplay
 
-© 2026 CARP Roleplay. Tüm hakları saklıdır (ama kodları incelemek serbest!).
+© 2026 CARP . Tüm hakları saklıdır (ama kodları incelemek serbest!).
