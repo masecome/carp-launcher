@@ -1,7 +1,7 @@
 :root {
-    --primary-yellow: #facc15; /* Canlı Sarı */
-    --dark-blue: #020617;      /* Çok Koyu Lacivert */
-    --glass-bg: rgba(2, 6, 23, 0.7); /* Saydam Koyu Zemin */
+    --primary-yellow: #facc15; 
+    --dark-blue: #020617;      
+    --glass-bg: rgba(2, 6, 23, 0.7); 
     --border-color: rgba(250, 204, 21, 0.3);
 }
 
@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Rajdhani', sans-serif; /* Oyuncu Fontu */
+    font-family: 'Rajdhani', sans-serif; 
     user-select: none;
     outline: none;
 }
@@ -21,13 +21,12 @@ body {
     color: white;
 }
 
-/* Arka Plan Yönetimi */
 .bg-image {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
     background: url('https://images.wallpapersden.com/image/download/gta-v-4k-artwork_bGxhZmWUmZqaraWkpJRmbmdlrWZlbWU.jpg') no-repeat center center/cover;
     z-index: -2;
-    filter: blur(2px); /* Arka planı hafif flulaştırdık ki yazılar okunsun */
+    filter: blur(2px);
 }
 
 .bg-overlay {
@@ -37,7 +36,6 @@ body {
     z-index: -1;
 }
 
-/* Üst Bar */
 .title-bar {
     height: 50px;
     display: flex;
@@ -70,7 +68,6 @@ body {
 .window-controls button:hover { color: white; }
 #closeBtn:hover { color: #ef4444; }
 
-/* Ana Düzen */
 .main-container {
     display: flex;
     height: calc(100vh - 50px);
@@ -78,7 +75,6 @@ body {
     gap: 40px;
 }
 
-/* Cam Efektli Paneller için Ortak Sınıf */
 .glass-panel {
     background: var(--glass-bg);
     backdrop-filter: blur(10px);
@@ -87,17 +83,15 @@ body {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* Sol Menü */
 .sidebar {
     width: 280px;
     padding: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-left: 4px solid var(--primary-yellow); /* Sol tarafa sarı çizgi */
+    border-left: 4px solid var(--primary-yellow); 
 }
 
-/* Sunucu Durumu */
 .server-status {
     background: rgba(255,255,255,0.03);
     padding: 15px;
@@ -132,7 +126,6 @@ body {
 .player-count { font-size: 22px; font-weight: 600; color: white; margin-top: 5px; }
 .ping-info { font-size: 12px; color: #64748b; margin-top: 5px; }
 
-/* Navigasyon Butonları */
 .nav-btn {
     width: 100%;
     padding: 18px 20px;
@@ -148,11 +141,9 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
-    /* Hafif yamuk şekil (Gamer Tarzı) */
     transform: skew(-10deg); 
 }
 
-/* İkonları düzeltmek için yamukluğu geri alıyoruz */
 .nav-btn i, .nav-btn span { transform: skew(10deg); } 
 
 .nav-btn:hover {
@@ -160,7 +151,7 @@ body {
     color: var(--dark-blue);
     border-color: var(--primary-yellow);
     box-shadow: 0 0 15px rgba(250, 204, 21, 0.4);
-    padding-left: 30px; /* Hover'da sağa kayma efekti */
+    padding-left: 30px; 
 }
 
 .nav-btn.danger:hover {
@@ -170,12 +161,11 @@ body {
     border-color: #ef4444;
 }
 
-/* Sağ İçerik */
 .content-area {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* İçeriği aşağı yasla */
+    justify-content: flex-end; 
     gap: 30px;
 }
 
@@ -213,7 +203,6 @@ body {
 }
 .news-card ul li i { color: var(--primary-yellow); margin-right: 10px; }
 
-/* OYNA BUTONU */
 .play-btn-glitch {
     width: 100%;
     height: 100px;
@@ -252,13 +241,12 @@ body {
     transform: skew(-10deg) scale(1.02);
 }
 
-/* --- MODAL (POP-UP) SİSTEMİ --- */
 .modal-overlay {
     position: fixed;
     top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Arkayı karartır */
+    background: rgba(0, 0, 0, 0.8); 
     z-index: 1000;
-    display: none; /* Başlangıçta gizli */
+    display: none; 
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(5px);
@@ -272,10 +260,10 @@ body {
     transform: scale(0.7);
     transition: 0.3s;
     opacity: 0;
-    display: none; /* <--- İŞTE BU EKSİKTİ! Bunu mutlaka ekle. */
+    display: none; 
 }
 
-/* Modal Açılma Animasyonu */
+
 .modal-overlay.active { display: flex; }
 .modal-overlay.active .modal-box { transform: scale(1); opacity: 1; }
 
@@ -297,7 +285,6 @@ body {
 
 .modal-content { padding: 20px; }
 
-/* Tuş Rehberi Tasarımı */
 .key-row {
     display: flex; align-items: center; margin-bottom: 10px;
     border-bottom: 1px solid rgba(255,255,255,0.05);
@@ -315,11 +302,11 @@ body {
     text-align: center;
 }
 
-/* Vitrin Tasarımı */
 .showcase-img { width: 100%; border-radius: 4px; border: 1px solid #333; margin-bottom: 15px; }
 .showcase-content h4 { color: white; font-size: 22px; margin-bottom: 5px; }
 .showcase-content p { color: #94a3b8; font-size: 14px; margin-bottom: 15px; }
 
 .stat { display: flex; align-items: center; gap: 10px; margin-bottom: 5px; font-size: 14px; }
 .stat .bar { flex: 1; height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; }
+
 .stat .fill { height: 100%; background: var(--primary-yellow); border-radius: 3px; box-shadow: 0 0 10px var(--primary-yellow); }
