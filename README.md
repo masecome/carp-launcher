@@ -55,7 +55,7 @@ npm start
 ```
 
 👨‍💻 Geliştirici & Yazar
-Bu proje EREN (MASECOME) tarafından CARP Roleplay topluluğu için sevgiyle kodlanmıştır.
+Bu proje EREN (MASECOME) tarafından CARP topluluğu için sevgiyle kodlanmıştır.
 
 "Kodlar herkesin erişimine açıktır çünkü şeffaflık ve paylaşım topluluğumuzu güçlendirir."
 
