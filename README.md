@@ -1,6 +1,6 @@
 # 🏎️ CARP Launcher - Resmi Sunucu Başlatıcısı
 
-![Version](https://img.shields.io/badge/version-1.0.11-blue.svg?style=for-the-badge) ![Electron](https://img.shields.io/badge/Built%20With-Electron-green.svg?style=for-the-badge) ![Status](https://img.shields.io/badge/Status-Stable-brightgreen.svg?style=for-the-badge) ![Open Source](https://img.shields.io/badge/Open%20Source-Yes-orange.svg?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-1.0.12-blue.svg?style=for-the-badge) ![Electron](https://img.shields.io/badge/Built%20With-Electron-green.svg?style=for-the-badge) ![Status](https://img.shields.io/badge/Status-Stable-brightgreen.svg?style=for-the-badge) ![Open Source](https://img.shields.io/badge/Open%20Source-Yes-orange.svg?style=for-the-badge)
 
 **CARP** topluluğu için özel olarak geliştirilmiş; **hızlı, güvenli ve tamamen açık kaynak kodlu** sunucu başlatıcısı.
 
